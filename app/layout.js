@@ -11,7 +11,7 @@ import { Github, Linkedin, MessageCircle } from "lucide-react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AI Career Coach",
+  title: "AXION AI - Your AI Career Coach",
   description: "",
 };
 
