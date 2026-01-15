@@ -11,17 +11,21 @@ export default async function InterviewPrepPage() {
   const recentFeedback = await getRecentAIInterviewFeedback();
 
   return (
-    <div>
-      <div className="flex items-center justify-between mb-5">
-        <h1 className="text-6xl font-bold gradient-title">
+    <div className="px-4 pb-8 pt-4 sm:px-6 lg:px-8">
+      <div className="mb-6 flex flex-col gap-4 sm:mb-8 sm:flex-row sm:items-center sm:justify-between">
+        <h1 className="gradient-title text-3xl font-bold sm:text-5xl md:text-6xl">
           Interview Preparation
         </h1>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2 justify-start sm:justify-end">
           <Link href="/interview/ai">
-            <Button variant="default">AI Live Interview</Button>
+            <Button className="w-full sm:w-auto" variant="default">
+              AI Live Interview
+            </Button>
           </Link>
           <Link href="/interview/mock">
-            <Button variant="outline">Mock MCQ Quiz</Button>
+            <Button className="w-full sm:w-auto" variant="outline">
+              Mock MCQ Quiz
+            </Button>
           </Link>
         </div>
       </div>
